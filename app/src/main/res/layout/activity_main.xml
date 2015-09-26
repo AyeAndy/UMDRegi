@@ -54,7 +54,9 @@
         android:id="@+id/Enter"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="46dp" />
+        android:layout_marginBottom="46dp"
+        android:onClick="buttonClicked"
+        />
 
     <TextView
         android:layout_width="wrap_content"
