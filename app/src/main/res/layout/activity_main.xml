@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="Name"
         android:ems="10"
         android:id="@+id/Name"
         android:layout_alignParentTop="true"
@@ -23,7 +23,7 @@
         android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/Email"
-        android:text="E-mail"
+        android:hint="E-mail"
         android:layout_below="@+id/Name"
         android:layout_centerHorizontal="true" />
 
@@ -31,23 +31,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/UID"
-        android:text="UID"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="UID"
         android:layout_below="@+id/Email"
-        android:layout_alignRight="@+id/Email"
-        android:layout_alignEnd="@+id/Email"
-        android:layout_alignLeft="@+id/Email"
-        android:layout_alignStart="@+id/Email" />
+        android:layout_centerHorizontal="true"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Grade"
+        android:inputType="text"
         android:layout_below="@+id/UID"
-        android:layout_alignLeft="@+id/UID"
-        android:layout_alignStart="@+id/UID"
-        android:text="Grade"
-        android:layout_alignRight="@+id/UID"
-        android:layout_alignEnd="@+id/UID" />
+        android:hint="Grade"
+        android:ems = "10"
+        android:layout_centerHorizontal="true"/>
 
     <Button
         android:layout_width="wrap_content"
