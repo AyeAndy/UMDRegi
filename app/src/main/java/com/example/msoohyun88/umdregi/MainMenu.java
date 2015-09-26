@@ -1,9 +1,11 @@
 package com.example.msoohyun88.umdregi;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainMenu extends AppCompatActivity {
 
@@ -33,5 +35,16 @@ public class MainMenu extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void button3(View view){
+
+
+        startActivity(new Intent(this, MainActivity.class));
+    }
+
+    public void button2(View view){
+
+        startActivity(new Intent(this, CreateQRActivity.class));
     }
 }

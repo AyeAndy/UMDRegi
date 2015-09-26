@@ -59,10 +59,6 @@ public class MainActivity extends AppCompatActivity {
 
                 String contents = intent.getStringExtra("SCAN_RESULT");
                 String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
-
-                Log.d("JACK--------------", contents);
-                
-
             }
         }
 
