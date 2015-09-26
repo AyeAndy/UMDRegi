@@ -1,9 +1,17 @@
 package com.example.msoohyun88.umdregi;
 
+import android.content.Intent;
+import android.os.Debug;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.StringWriter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,5 +41,30 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void buttonClicked(View view){
+
+        Intent intent = new Intent("com.google.zxing.client.android.SCAN");
+        intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
+        startActivityForResult(intent, 0);
+
+    }
+
+    public void onActivityResult(int requestCode, int resultCode, Intent intent){
+
+        if(requestCode == 0){
+
+            if(resultCode == RESULT_OK){
+
+                String contents = intent.getStringExtra("SCAN_RESULT");
+                String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
+
+                Log.d("JACK--------------", contents);
+                
+
+            }
+        }
+
     }
 }
